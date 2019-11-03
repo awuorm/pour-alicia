@@ -6,12 +6,14 @@ import Home from "./components/Home";
 import NotificationDrawer from "./components/NotificationDrawer";
 import BackDrop from "./components/Backdrop";
 import UserDrawer from "./components/UserDrawer";
+import LandingPage from "./components/LandingPage";
 
 function App(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [userDrawerOpen, setUserDrawerOpen] = useState(false);
   return (
     <div className="App">
+      <Route  exact path="/" component ={LandingPage}/>
       <Route path="/dashboard" render={props => <Dashboard {...props} />} />
       <Route
         path="/dashboard/home"

@@ -104,6 +104,18 @@ export const StyledNotification = styled.div`
   }
 `;
 
+export const StyledUserDrawer = styled.div`
+  height: 70vh;
+  width: 20vw;
+  position: fixed;
+  padding: 0.5em;
+  right: 1vw;
+  top: 9vh;
+  z-index: 200;
+  background: white;
+  box-shadow: 0 0 6px #000;
+`;
+
 export const StyledBackDrop = styled.div`
   display: none;
 `;

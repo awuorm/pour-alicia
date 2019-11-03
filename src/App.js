@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+import Home from "./components/Home";
+import NotificationDrawer from "./components/NotificationDrawer";
+import BackDrop from "./components/Backdrop";
+import UserDrawer from "./components/UserDrawer";
 
-function App() {
+function App(props) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [userDrawerOpen, setUserDrawerOpen] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route path="/dashboard" render={props => <Dashboard {...props} />} />
+      <Route
+        path="/dashboard/home"
+        render={props => (
+          <Home
+          userDrawerOpen={userDrawerOpen}
+          setUserDrawerOpen={setUserDrawerOpen}
+            drawerOpen={drawerOpen}
+            setDrawerOpen={setDrawerOpen}
+            {...props}
+          />
+          )}
+          />
+          {drawerOpen ? <NotificationDrawer/> : <BackDrop/>}
+          {userDrawerOpen ? <UserDrawer/> : <BackDrop/>}
     </div>
   );
 }

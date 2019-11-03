@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import landing_page_2 from "../src/imgs/landing_page_2.jpg";
 
 export const StyledUserView = styled.div`
   width: 20vw;
   height: 100vh;
-  /* background: #F7E580; */
   border-right: 1px solid lightgray;
   figure {
     margin: 0;
@@ -12,7 +12,6 @@ export const StyledUserView = styled.div`
     object-fit: fill;
     margin-bottom: 10vh;
     img {
-      /* margin-top:0; */
       width: 80%;
       height: 100%;
     }
@@ -118,4 +117,11 @@ export const StyledUserDrawer = styled.div`
 
 export const StyledBackDrop = styled.div`
   display: none;
+`;
+
+export const StyledLandingPage = styled.div`
+  background-image: url(${landing_page_2});
+  background-size:50%;
+  height: 100vh;
+  width: 100vw;
 `;

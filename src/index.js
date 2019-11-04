@@ -9,7 +9,11 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const monsterReducer = combineReducers({});
+import * as reducers from "../src/state/reducers";
+
+const monsterReducer = combineReducers({
+  quotes: reducers.quotesReducers,
+});
 
 const store = createStore(
   monsterReducer,

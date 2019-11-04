@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import "./App.css";
 import { Route } from "react-router-dom";
+import {connect} from "react-redux";
+
+import "./App.css";
 import Dashboard from "./components/Dashboard";
 import Home from "./components/Home";
 import NotificationDrawer from "./components/NotificationDrawer";
@@ -8,7 +10,8 @@ import BackDrop from "./components/Backdrop";
 import UserDrawer from "./components/UserDrawer";
 import LandingPage from "./components/LandingPage";
 
-function App(props) {
+export function App(props) {
+  console.log("props from app",props);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [userDrawerOpen, setUserDrawerOpen] = useState(false);
   return (
@@ -33,4 +36,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default connect(state => state)(App);

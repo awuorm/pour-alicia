@@ -20,7 +20,7 @@ export const StyledUserView = styled.div`
     .navlink-btn {
       display: flex;
       align-items: center;
-      justify-content:center;
+      justify-content: center;
       font-size: 1.5em;
       text-decoration: none;
       color: black;
@@ -30,16 +30,16 @@ export const StyledUserView = styled.div`
       background: white;
       :hover {
         color: #ffd131;
-        border-bottom: 4px solid #ffd131;
+        /* border-bottom: 4px solid #ffd131; */
       }
       img {
-        margin-top:0.5em;
+        margin-top: 0.5em;
         margin-left: 1em;
         width: 3vw;
         height: 6vh;
       }
       span {
-        margin-top:0.5em;
+        margin-top: 0.5em;
         margin-left: 0.5em;
       }
     }
@@ -130,13 +130,46 @@ export const StyledLandingPage = styled.div`
 `;
 
 export const StyledQuotes = styled.div`
-  background: #ADD100;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #add100; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7b920a,
+    #add100
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7b920a,
+    #add100
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 80%;
   margin-left: 10%;
   margin-top: 0;
   padding: 0.5em;
   color: aliceblue;
   border-radius: 0.5em;
+`;
+
+export const StyledStoriesCard = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    width: 100%;
+    height: 90%;
+    div {
+      width: 25%;
+      height: 25%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid lightgray;
+      margin-left: 5%;
+    }
+    img {
+      width: 80%;
+      height: 80%;
+    }
+  
+  }
 `;

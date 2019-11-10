@@ -3,7 +3,7 @@ import landing_page_2 from "../src/imgs/landing_page_2.jpg";
 
 export const StyledUserView = styled.div`
   width: 20vw;
-  height: 100vh;
+  height: 1200px;
   border-right: 1px solid lightgray;
   figure {
     margin: 0;
@@ -48,7 +48,7 @@ export const StyledUserView = styled.div`
 
 export const StyledHome = styled.div`
   width: 80vw;
-  height: 100vh;
+  height: 1200px;
   z-index: 100;
   div {
     display: flex;
@@ -151,31 +151,33 @@ export const StyledQuotes = styled.div`
 
 export const StyledStoriesCard = styled.div`
   width: 90%;
-  height: 90%;
+  height: 1200px;
   display: flex;
   flex-direction: column;
 
   div {
     width: 100%;
-    height: 90%;
+    height: 40%;
+    border: none;
     div {
       width: 25%;
-      height: 25%;
+      height: 55%;
       display: flex;
       flex-direction: column;
       border: 1px solid lightgray;
       margin-left: 5%;
-    }
-    img {
-      width: 80%;
-      height: 80%;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
     }
   }
 `;
 
 export const StyledStories = styled.div`
-width: 90%;
-height: 100%;
+  width: 90%;
+  height: 100%;
   div {
     display: flex;
     flex-direction: column;
@@ -187,14 +189,14 @@ height: 100%;
     }
     img {
       width: 50%;
-      height:40%;
+      height: 40%;
       border: 1px solid lightgray;
     }
     p {
       width: 90%;
       padding: 1em;
-      margin-left:0;
-      margin-right:0;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 `;

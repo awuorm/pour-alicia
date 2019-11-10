@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { stories } from "../data";
 import { StyledStoriesCard } from "../styles";
 import { NavLink } from "react-router-dom";
+import Recommended from "./Recommended";
+import Stories from "./Stories";
+import StoriesByAge from "./StoriesByAge";
+import StoriesByGenre from "./StoriesByGenre";
 
 const StoriesCard = props => {
   const [kidStories] = useState(stories);
@@ -30,6 +34,9 @@ const StoriesCard = props => {
           );
         })}
       </div>
+      <Recommended/>
+      <StoriesByAge/>
+      <StoriesByGenre/>
     </StyledStoriesCard>
   );
 };

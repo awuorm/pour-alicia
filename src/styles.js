@@ -168,8 +168,8 @@ export const StyledStoriesCard = styled.div`
       margin-left: 5%;
 
       img {
-        width: 80%;
-        height: 80%;
+        width: 90%;
+        height: 90%;
       }
     }
   }

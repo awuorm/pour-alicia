@@ -21,7 +21,7 @@ const StoriesCard = props => {
 
               <NavLink
                 style={{
-                  marginTop: "0.5em",
+                  marginTop: "0.8em",
                   color: "black",
                   textDecoration: "none",
                   padding: "1em"

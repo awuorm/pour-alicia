@@ -3,6 +3,7 @@ import { StyledHome } from "../styles";
 import search_icon_3 from "../imgs/search_icon_3.png";
 import bell_icon_3 from "../imgs/bell_icon_3.png";
 import user_icon_2 from "../imgs/user_icon_2.png";
+import StoriesCard from "./storiesCard";
 
 const Home = props => {
   const { drawerOpen, setDrawerOpen,userDrawerOpen,setUserDrawerOpen } = props;
@@ -28,6 +29,7 @@ const Home = props => {
           <img alt="user icon" src={user_icon_2} />
         </button>
       </div>
+      <StoriesCard/>
     </StyledHome>
   );
 };

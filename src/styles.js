@@ -150,8 +150,8 @@ export const StyledQuotes = styled.div`
 `;
 
 export const StyledStoriesCard = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   display: flex;
   flex-direction: column;
 
@@ -170,6 +170,31 @@ export const StyledStoriesCard = styled.div`
       width: 80%;
       height: 80%;
     }
-  
+  }
+`;
+
+export const StyledStories = styled.div`
+width: 90%;
+height: 100%;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      margin-top: 5%;
+      text-align: center;
+    }
+    img {
+      width: 50%;
+      height:40%;
+      border: 1px solid lightgray;
+    }
+    p {
+      width: 90%;
+      padding: 1em;
+      margin-left:0;
+      margin-right:0;
+    }
   }
 `;
